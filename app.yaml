@@ -1,0 +1,11 @@
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  python_version: 3
+
+env_variables:
+  CLOUD_STORAGE_BUCKET: foodcam-perkinshacks.appspot.com
+  FIREBASE_PROJECT_ID: 'foodcam-perkinshacks'
+  CLARIFAI_API_KEY: c6edbc128fc546888bb55b2c621798e2
