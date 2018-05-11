@@ -36,7 +36,6 @@ CLOUD_STORAGE_BUCKET = os.environ.get('CLOUD_STORAGE_BUCKET')
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def homepage():
     return render_template('homepage.html')
